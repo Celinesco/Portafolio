@@ -358,15 +358,12 @@ input[type="submit"] {
     }
 
     /* ------FOOTER----------- */
-    /* .footer1 {
+    .footer-nav {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
-
-    .footer2 {
-        display: flex;
-    } */
-
+    
     .iconosociales {
         min-height: 30px;
         min-width: 30px;

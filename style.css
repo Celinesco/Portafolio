@@ -5,6 +5,7 @@
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    padding: 0;
 }
 
 html, body {
@@ -217,27 +218,52 @@ q {
 
 /* --------------------FOOTER------------------------- */
 
-.footer {
-    display: flex;
+footer {
     background-color: black;
-    justify-content: center;
-    padding: 10px;
+    padding: 80px;
 }
 
-.iconosociales {
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-nav {
+    display: flex;
+}
+
+.hechopor {
+    color:white;
+    margin-top: 40px;
+}
+
+.footer-nav li {
+    margin: 0 20px 50px 20px;
+}
+
+.footer-iconos-sociales {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(226, 177, 43);
-    border-radius: 50%;
-    height: 45px;
-    width: 45px;
-    margin: 15px;
-    margin-bottom: 20px;
 }
 
-.nav {
-    margin: 20px 25px;
+.iconos > i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.redes {
+    color:white;
+    font-size: 30px;
+    background-color: rgb(255, 166, 0);
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
 }
 
 .textdescription {
@@ -332,14 +358,14 @@ input[type="submit"] {
     }
 
     /* ------FOOTER----------- */
-    .footer1 {
+    /* .footer1 {
         display: flex;
         flex-direction: column;
     }
 
     .footer2 {
         display: flex;
-    }
+    } */
 
     .iconosociales {
         min-height: 30px;

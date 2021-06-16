@@ -203,14 +203,6 @@ q {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-.imagenescontainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
-    width: 900px; 
-}
-
 .imagenproyecto {
     width: 300px;
     height: auto;
@@ -335,8 +327,12 @@ input[type="submit"] {
         overflow-x: hidden;
     }
 
-    header {
+    nav {
         display: none;
+    }
+
+    h2 {
+        text-align: center;
     }
 
     /* ----INTRODUCCIÓN------ */
@@ -363,7 +359,7 @@ input[type="submit"] {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .iconosociales {
         min-height: 30px;
         min-width: 30px;
@@ -386,10 +382,6 @@ input[type="submit"] {
     }
 
     /* MIS PROYECTOS */
-
-    .imagenescontainer{
-        max-width: 887px;
-    }
 
     .imagenproyecto {
         max-height: 190px;        

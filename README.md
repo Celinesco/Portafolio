@@ -1,6 +1,6 @@
 # Proyecto: Portafolio 🐢
 
-Portafolio personal, realizado con los conocimientos adquiridos de HTML, CSS hasta el momento. El proyecto no está finalizado, se irá modificando a lo largo de la cursada.
+Portafolio personal, realizado con los conocimientos adquiridos de HTML, CSS hasta el momento en el curso de Front-End de Ada. El proyecto no está finalizado, se irá modificando a lo largo de la cursada.
 
 ## Contenido: 📝
    - Nav con links de navegación

@@ -8,9 +8,7 @@
     padding: 0;
 }
 
-html, body {
-    height: 100%; 
-}
+
 
 a:link, a:visited, a:active {
     text-decoration:none;
@@ -118,7 +116,7 @@ nav {
 }
 
 .imgpresentacion {
-    max-width: 600px;
+    max-width: 700px;
     display: block;
 }
 
@@ -210,7 +208,7 @@ q {
 }
 
 .imagenproyecto {
-    width: 300px;
+    width: 270px;
     height: auto;
 }
 
@@ -305,6 +303,7 @@ footer {
 label {
     margin: 5px 0px 10px;
     font-family: 'Courier New', Courier, monospace;
+    padding:5px;
 }
 
 input, textarea {

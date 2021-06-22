@@ -147,14 +147,14 @@
                 <p class="textdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id,
                     nesciunt?</p>
                 <div class="skillsjuntas">
-                    <a href="#" target="_blank">
+                    <a href="#" target="_blank" class="links-proyectos">
                         <div class="skills proyect">
                             <img class="imagenproyecto" src="Screenshot from 2021-06-01 15-45-01.png"
                              alt="">
                             <h4>Portafolio</h4>
                         </div>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="#" target="_blank" class="links-proyectos">
                         <div class="skills proyect">
                             <img class="imagenproyecto" src="undraw_good_team_m7uu.svg" alt="">
                             <h4>Trabajo en Equipo</h4>
@@ -203,33 +203,35 @@
                    </ul>
                 </div>
                 <div class="contact-column">
-                    <h2>Escribime</h2>
+                    <div class="column">
+                        <h2 class="escribime">Escribime</h2>
+                            <p class="campos-obligatorios">* Indica campos obligatorios</p>
+                    </div>
                     <form action="datos_usuario.html" method="POST">
                         <div class="rows">
                             <!-- Nombre -->
                             <div class="column">
                                 <label for="fname">Nombre *</label>
-                                <input type="text" id="fname" name="fname" placeholder="p. ej.: Ada">
+                                <input type="text" id="fname" name="fname" required="required" placeholder="p. ej.: Ada">
                             </div>
                             <!-- Apellido -->
                             <div class="column">
                                 <label for="lname">Apellido *</label>
-                                <input type="text" id="lname" name="lname" placeholder="p. ej.: Lovelace">
+                                <input type="text" id="lname" name="lname" required="required" placeholder="p. ej.: Lovelace">
                             </div>
                         </div>
                         <!-- Email -->
                         <div class="column">
                             <label for="mail">Email *</label>
-                            <input type="email" id="mail" name="email" placeholder="p. ej.:ada.lovelace@gmail.com">
+                            <input type="email" id="mail" name="email" required="required" placeholder="p. ej.:ada.lovelace@gmail.com">
                         </div>
                         <!-- Mensaje -->
                         <div class="column">
                             <label for="message">Mensaje *</label>
-                            <textarea name="message" id="message" cols="25" row="15"
+                            <textarea name="message" id="message" cols="25" row="15" required="required"
                                 placeholder="Escriba un mensaje aquí"></textarea><br>
-                            <label for="enviar"></label>
                         </div>
-                        <input type="submit" id="enviar" value="Enviar">
+                            <input type="submit" id="enviar" value="Enviar">
                     </form>
                 </div>
             </div>

@@ -11,7 +11,9 @@
 a:link, a:active, a:visited {
     text-decoration:none;
     color:white;
+    padding: 0 10px;
 }
+
 
 ul {
     list-style: none;
@@ -52,18 +54,19 @@ section {
     align-items: center;
 }
 
-h1, .boton, .autor, input[type="submit"], label, #contactoheader {
+h1, .boton, .autor, input[type="submit"], label, .contacto-nav {
     font-weight: bold;
 }
 
 /*---------------NAV---------------------*/
 
 nav {
-    padding: 20px 0;
+    padding: 20px 10px;
     background-color: black;
     box-shadow: 0px 5px 8px #888888;
     width:100%;
     position: fixed;
+    line-height: 2.5;
 }
 
 .nav {
@@ -73,13 +76,31 @@ nav {
 }
 
 .navheader {
-    padding: 10px;
     margin: 0px 10px;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    
 }
 
-#contactoheader {
+.contacto-nav {
     background-color: rgb(255, 166, 0);
+    transition: 0.5s;
+}
+
+.contacto-nav:hover {
+    border: 1px solid rgb(255, 166, 0);
+    background-color: white;
+}
+
+.contacto-nav a:hover {
+    color: black;
+}
+
+.contacto-nav a:focus {
+    background-color: black;
+    color: rgb(255, 166, 0);
+    transition: 1s;
 }
 
 
@@ -239,6 +260,8 @@ q {
     width:50%;
 }
 
+
+
 .rows {
     display: flex;
 }
@@ -315,12 +338,28 @@ footer {
     justify-content: center;
     align-items: center;
 }
+ 
 
-.iconos > i {
+/* ----HOVER Y FOCUS----- */
+
+li a {
     display: flex;
-    justify-content: center;
     align-items: center;
-    
+    outline: none;
+}
+
+li a:focus {    
+    box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
+    border-radius: 30px;
+}
+
+.navheader a:focus {
+    width:100%;
+}
+
+
+.iconos {
+    padding: 20px 0;
 }
 
 .redes {
@@ -328,9 +367,13 @@ footer {
     font-size: 20px;
     background-color: rgb(255, 166, 0);
     border-radius: 100%;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s;
 }
 
 .textdescription {
@@ -338,6 +381,39 @@ footer {
     text-align: center;
     color:gray;
     font-size: 18px;
+}
+
+.redes:hover {
+    color:rgb(255, 166, 0);
+    background-color: white;
+    border: 1px solid rgb(255, 166, 0);
+}
+
+.contact-media-social {
+    width: 160px;
+    height: 60px;
+    margin:10px;
+    border-radius: 50px;
+    display: flex;
+    margin-top: 10px;
+    margin-left:5px;
+}
+
+.contact-media-social:focus {
+    border: 1px solid rgb(255, 166, 0);
+    box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
+}
+
+.yanosequemasprobar {
+    width: 160px;
+    height: 60px;
+}
+
+.yanosequemasprobar:focus {
+    border: 1px solid rgb(255, 166, 0);
+    box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
+    outline: none;
+
 }
 
 

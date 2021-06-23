@@ -54,7 +54,7 @@ section {
     align-items: center;
 }
 
-h1, .boton, .autor, input[type="submit"], label, .contacto-nav {
+h1, .lo-que-hago, .autor, input[type="submit"], label, .contacto-nav {
     font-weight: bold;
 }
 
@@ -80,12 +80,15 @@ nav {
     border-radius: 20px;
     display: flex;
     justify-content: center;
-    
 }
 
-.contacto-nav {
+.contacto-nav, .lo-que-hago {
     background-color: rgb(255, 166, 0);
     transition: 0.5s;
+}
+
+.lo-que-hago:focus {
+    box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
 }
 
 .contacto-nav:hover {
@@ -93,14 +96,15 @@ nav {
     background-color: white;
 }
 
-.contacto-nav a:hover {
+
+.contacto-nav a:hover, .lo-que-hago:hover{
     color: black;
 }
 
-.contacto-nav a:focus {
+.contacto-nav a:focus, .lo-que-hago:focus {
     background-color: black;
     color: rgb(255, 166, 0);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 
@@ -147,15 +151,19 @@ nav {
     text-align: left;
 }
 
-.boton {
-    font-size: 1em;
-    background-color: rgb(255, 166, 0);
-    border-radius: 10px;
-    padding: 15px;
-    width:180px;
-    margin: 40px 0;
+.lo-que-hago {
+    padding: 15px 0;
+    width:150px;
     text-align: center;
+    border-radius: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
 }
+
+
 
 
 /* ---MIS CONOCIMIENTOS--------- */
@@ -306,6 +314,9 @@ input[type="submit"] {
     padding: 0;
 }
 
+.contact-media-social a {
+    color:black;
+}
 /* --------------------FOOTER------------------------- */
 
 footer {
@@ -322,6 +333,7 @@ footer {
 
 .footer-nav {
     display: flex;
+    line-height: 2.5;
 }
 
 .hechopor {
@@ -348,12 +360,16 @@ li a {
     outline: none;
 }
 
+li a:hover {
+    color:rgb(255, 166, 0);
+}
+
 li a:focus {    
     box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
     border-radius: 30px;
 }
 
-.navheader a:focus {
+.navheader a:focus, {
     width:100%;
 }
 

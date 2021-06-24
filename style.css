@@ -425,6 +425,10 @@ li .redes:hover {
     width: 90%;
 }
 
+.skills:hover {
+    border: 2px solid orange;
+}
+
 
 /* -----------DISPOSITIVOS MÓVILES ---------*/
 

@@ -67,6 +67,7 @@ nav {
     width:100%;
     position: fixed;
     line-height: 2.5;
+    z-index: 2;
 }
 
 .nav {
@@ -538,10 +539,5 @@ li .redes:hover {
         border: none;
         width:300px;
     }
-
-
-
-    
-
     
 }

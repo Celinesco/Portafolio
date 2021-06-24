@@ -3,7 +3,12 @@
 Portafolio personal, realizado con los conocimientos de **HTML** y **CSS** adquiridos hasta el momento en el curso de Front-End de Ada. El proyecto no está finalizado, se irá modificando a lo largo de la cursada.
 
 ### URL del proyecto: 
-[POrtafolio Celina Inés Alsina](https://celinesco.github.io/Portafolio/)
+👉 [Portafolio](https://celinesco.github.io/Portafolio/)
+
+### Fuentes
+-Las imágenes fueron tomadas de [Undraw](https://undraw.co/illustrations)
+-Los íconos de [fontAwsome](https://fontawesome.com/) y de [Devicon](https://devicon.dev/)
+
 
 ## Contenido: 📝
    - Nav con links de navegación

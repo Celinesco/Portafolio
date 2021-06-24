@@ -6,8 +6,8 @@ Portafolio personal, realizado con los conocimientos de **HTML** y **CSS** adqui
 👉 [Portafolio](https://celinesco.github.io/Portafolio/)
 
 ### Fuentes
--Las imágenes fueron tomadas de [Undraw](https://undraw.co/illustrations)
--Los íconos de [fontAwsome](https://fontawesome.com/) y de [Devicon](https://devicon.dev/)
+ - Las imágenes fueron tomadas de [Undraw](https://undraw.co/illustrations)
+ - Los íconos de [fontAwsome](https://fontawesome.com/) y de [Devicon](https://devicon.dev/)
 
 
 ## Contenido: 📝

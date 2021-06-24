@@ -268,8 +268,6 @@ q {
     width:50%;
 }
 
-
-
 .rows {
     display: flex;
 }
@@ -521,6 +519,29 @@ li .redes:hover {
     .column {
         width: 450px;
     }
+
+    
+}
+
+@media screen and (max-width: 500px) {
+       .contact-column {
+        max-width: 400px;
+    }
+
+    .escribime {
+        text-align: left;
+    }
+
+    input, textarea {
+        padding: 10px 15px;
+        border-radius: 20px;
+        border: none;
+        width:300px;
+    }
+
+
+
+    
 
     
 }

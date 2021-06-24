@@ -1,6 +1,9 @@
 # Proyecto: Portafolio 🐢
 
-Portafolio personal, realizado con los conocimientos adquiridos de HTML, CSS hasta el momento en el curso de Front-End de Ada. El proyecto no está finalizado, se irá modificando a lo largo de la cursada.
+Portafolio personal, realizado con los conocimientos de **HTML** y **CSS** adquiridos hasta el momento en el curso de Front-End de Ada. El proyecto no está finalizado, se irá modificando a lo largo de la cursada.
+
+### URL del proyecto: 
+[link](https://celinesco.github.io/Portafolio/)
 
 ## Contenido: 📝
    - Nav con links de navegación

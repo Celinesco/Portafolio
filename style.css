@@ -88,26 +88,6 @@ nav {
     transition: 0.5s;
 }
 
-.lo-que-hago:focus {
-    box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
-}
-
-.contacto-nav:hover {
-    border: 1px solid rgb(255, 166, 0);
-    background-color: white;
-}
-
-
-.contacto-nav a:hover, .lo-que-hago:hover{
-    color: black;
-}
-
-.contacto-nav a:focus, .lo-que-hago:focus {
-    background-color: black;
-    color: rgb(255, 166, 0);
-    transition: 0.5s;
-}
-
 
 /* ------SECCIONES---------- */
 
@@ -163,8 +143,6 @@ nav {
     justify-content: center;
     margin-top: 30px;
 }
-
-
 
 
 /* ---MIS CONOCIMIENTOS--------- */
@@ -351,6 +329,43 @@ footer {
 }
  
 
+.iconos {
+    padding: 20px 0;
+}
+
+.redes {
+    color:white;
+    font-size: 20px;
+    background-color: rgb(255, 166, 0);
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.textdescription {
+    width: 80%;
+    text-align: center;
+    color:gray;
+    font-size: 18px;
+}
+
+
+.contact-media-social {
+    width: 160px;
+    height: 60px;
+    margin:10px;
+    border-radius: 50px;
+    display: flex;
+    margin-top: 10px;
+    margin-left:5px;
+}
+
+
 /* ----HOVER Y FOCUS----- */
 
 li a {
@@ -378,54 +393,38 @@ li .redes:hover {
     border: 1px solid rgb(255, 166, 0);
 }
 
-.navheader a:focus, {
-    width:100%;
+
+.lo-que-hago:focus {
+    box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
+}
+
+.contacto-nav:hover {
+    border: 1px solid rgb(255, 166, 0);
+    background-color: white;
 }
 
 
-.iconos {
-    padding: 20px 0;
+.contacto-nav a:hover, .lo-que-hago:hover{
+    color: black;
 }
 
-.redes {
-    color:white;
-    font-size: 20px;
-    background-color: rgb(255, 166, 0);
-    border-radius: 100%;
-    width: 35px;
-    height: 35px;
-    margin: 0 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.8s;
+.lo-que-hago:hover {
+    background-color: white;
+    border: 1px solid orange;
+    box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
 }
 
-.textdescription {
-    width: 80%;
-    text-align: center;
-    color:gray;
-    font-size: 18px;
-}
-
-
-
-.contact-media-social {
-    width: 160px;
-    height: 60px;
-    margin:10px;
-    border-radius: 50px;
-    display: flex;
-    margin-top: 10px;
-    margin-left:5px;
+.contacto-nav a:focus, .lo-que-hago:focus {
+    background-color: black;
+    color: rgb(255, 166, 0);
+    transition: 0.5s;
 }
 
 .contact-media-social a:focus {
     border: 1px solid rgb(255, 166, 0);
-    box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
-    height: 45px;   
+    box-shadow: rgb(255, 166, 0) 0px 0px 8px 0px; 
+    width: 90%;
 }
-
 
 
 /* -----------DISPOSITIVOS MÓVILES ---------*/

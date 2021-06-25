@@ -25,7 +25,7 @@ svg {
 }
 
 h1 {
-    color: rgb(255, 166, 0);
+    color: rgb(139, 101, 29);
     font-size: 300%;
     padding-bottom: 5px;
     font-family: 'Rock Salt', cursive;
@@ -54,7 +54,7 @@ section {
     align-items: center;
 }
 
-h1, .lo-que-hago, .autor, input[type="submit"], label, .contacto-nav {
+h1, .lo-que-hago, .autor-cita, input[type="submit"], label, .contacto-nav {
     font-weight: bold;
 }
 
@@ -73,6 +73,7 @@ nav {
 .nav {
     display: flex;
     justify-content: flex-end;
+    margin: 5px 0;
     margin-right: 10%;
 }
 
@@ -84,7 +85,7 @@ nav {
 }
 
 .contacto-nav, .lo-que-hago {
-    background-color: rgb(255, 166, 0);
+    background-color: rgb(139, 101, 29);
     transition: 0.5s;
 }
 
@@ -192,9 +193,10 @@ q {
     text-align: center;
 }
 
-.autor {
+.autor-cita {
     margin-top: 5%;
     color: black;
+    font-size: 25px;
 }
 
 /* -------------PROYECTOS------------ */
@@ -221,11 +223,6 @@ q {
 .proyect:focus {
     box-shadow: 0 5px 15px rgb(255, 166, 0);
 }
-
-.links-proyectos:link  {
-    color:black;
-}
-
 
 /* ---------------CONTACTO------- */
 
@@ -398,10 +395,10 @@ li .redes:hover {
 }
 
 .contacto-nav:hover {
-    border: 1px solid rgb(255, 166, 0);
     background-color: white;
+    box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
+    
 }
-
 
 .contacto-nav a:hover, .lo-que-hago:hover{
     color: black;
@@ -428,6 +425,13 @@ li .redes:hover {
 .skills:hover {
     border: 2px solid orange;
 }
+
+.iconos-focus:hover > i {
+    color:rgb(255, 166, 0);
+    background-color: white;
+    border: 1px solid rgb(255, 166, 0);
+}
+
 
 
 /* -----------DISPOSITIVOS MÓVILES ---------*/

@@ -8,6 +8,11 @@
     padding: 0;
 }
 
+body, html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 a:link, a:active, a:visited {
     text-decoration:none;
     color:white;
@@ -156,7 +161,7 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     padding-top: 20px;
-    max-width: 900px;
+    max-width: 828px;
 }
 
 .skills {
@@ -208,6 +213,10 @@ q {
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.5s ease-in-out;
     transition: transform 2s;
+}
+
+.contenedor-proyectos {
+    max-width: 1308px;
 }
 
 .proyect:hover {
@@ -436,11 +445,15 @@ li .redes:hover {
 
 /* -----------DISPOSITIVOS MÓVILES ---------*/
 
+@media screen and (max-width: 1390px) {
+    .contenedor-proyectos {
+        max-width: 872px;
+    }
+}
+
+
 @media screen and (max-width: 1100px) {
     
-    html,body {
-        overflow-x: hidden;
-    }
 
     nav {
         display: none;
@@ -490,6 +503,10 @@ li .redes:hover {
         width: 100%;
     }
 
+    .skillsjuntas {
+        max-width: 552px ;
+    }
+
     /* CITA */
     
     #huevo {
@@ -497,6 +514,12 @@ li .redes:hover {
     }
 
     /* MIS PROYECTOS */
+
+
+
+    .contenedor-proyectos {
+        max-width: 632px;
+    }
 
     .imagenproyecto {
         max-height: 190px;        
@@ -530,8 +553,25 @@ li .redes:hover {
     
 }
 
-@media screen and (max-width: 500px) {
-       .contact-column {
+@media screen and (max-width: 695px) {
+
+    .skillsjuntas {
+        max-width: 260px ;
+    }
+
+
+    .contenedor-proyectos {
+        max-width: 320px;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 600px) {
+
+        
+    .contact-column {
         max-width: 400px;
     }
 

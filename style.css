@@ -335,6 +335,10 @@ footer {
 li .iconos-footer {
     padding: 0;
 }
+
+.iconos-footer {
+    height: 55px;
+}
  
 
 .redes {
@@ -405,7 +409,6 @@ li .redes:hover {
 .contacto-nav:hover {
     background-color: white;
     box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
-    
 }
 
 .contacto-nav a:hover, .lo-que-hago:hover{

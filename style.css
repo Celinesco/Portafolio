@@ -290,6 +290,9 @@ input[type="submit"] {
     margin-bottom: 20px;
 }
 
+.escribime {
+    padding: 0;
+}
 
 .contact-media-social a {
     color:black;

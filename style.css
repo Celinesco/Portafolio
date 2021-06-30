@@ -398,7 +398,7 @@ li a:focus {
 }
 
 li .iconos-focus:hover {
-    color: rgb(255, 166, 0);
+    color: #794F01;
 }
 
 li .redes:hover {
@@ -422,20 +422,20 @@ li .redes:hover {
     color: black;
 }
 
-.lo-que-hago:hover {
+.lo-que-hago:hover, input[type="submit"]:hover {
+    color: black;
     background-color: white;
-    border: 1px solid orange;
-    box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
+    box-shadow: 0px 0px 15px 0px #794F01;
 }
 
-.contacto-nav a:focus, .lo-que-hago:focus {
+.contacto-nav a:focus, .lo-que-hago:focus, input[type="submit"]:focus {
     background-color: black;
     color: rgb(255, 166, 0);
     transition: 0.5s;
 }
 
 .contact-media-social a:focus {
-    box-shadow: rgb(255, 166, 0) 0px 0px 8px 0px; 
+    box-shadow: 0px 0px 15px 0px  #794F01;
     width: 90%;
 }
 
@@ -462,6 +462,12 @@ li .redes:hover {
     box-shadow: rgb(255, 166, 0) 0px 0px 8px 0px;     
     height: 55px;
     
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px 0px  #794F01;
+ 
 }
 
 /* -----------DISPOSITIVOS MÓVILES ---------*/

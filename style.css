@@ -10,19 +10,15 @@
 
 body, html {
     overflow-x: hidden;
-    width: 100%;
 }
 
 a:link, a:active, a:visited {
     text-decoration:none;
     color:white;
-    padding: 0 10px;
 }
-
 
 ul {
     list-style: none;
- 
 }
 
 svg {
@@ -44,7 +40,7 @@ h2 {
 
 h4 {
     font-size: 18px;
-    margin: 8px 0px;
+    margin: 20px 0px 16px;
     color:black;
 }
 
@@ -87,11 +83,15 @@ nav {
     border-radius: 20px;
     display: flex;
     justify-content: center;
+    padding: 0 10px;
 }
+
+
 
 .contacto-nav, .lo-que-hago {
     background-color: rgb(139, 101, 29);
     transition: 0.5s;
+    
 }
 
 
@@ -109,7 +109,7 @@ nav {
 }
 
 .columna1 {
-    min-width: 500px;
+    min-width: 300px;
 }
 
 .column-img {
@@ -206,30 +206,39 @@ q {
 
 /* -------------PROYECTOS------------ */
 
+.columna-proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+}
+
 .proyect {
-    width: 400px;
-    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 320px;
+    width: calc(100% / 3 - 1em);
+    margin: 8px;
+    padding: 40px;
+    overflow: hidden;
+    border: 1px solid rgb(219, 218, 218);
     border-radius: 10px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: box-shadow 0.5s ease-in-out;
     transition: transform 2s;
-}
-
-.contenedor-proyectos {
-    max-width: 1308px;
+    text-align: center;
 }
 
 
-.imagenproyecto {
-    width: 270px;
-    height: auto;
+.imagen-proyecto {
+    width: 100%;
 }
 
 
 .contenedor-proyectos {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     padding-top: 20px;
 }
 
@@ -362,10 +371,11 @@ li .iconos-footer {
 }
 
 .textdescription {
-    width: 80%;
+    width: 50%;
     text-align: center;
     color:gray;
     font-size: 18px;
+    margin: 20px 0;
 }
 
 
@@ -382,7 +392,7 @@ li .iconos-footer {
 
 /* ----HOVER Y FOCUS----- */
 
-li a {
+a {
     display: flex;
     align-items: center;
     outline: none;
@@ -396,6 +406,7 @@ li a:focus {
     box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
     border-radius: 30px;
 }
+
 
 li .iconos-focus:hover {
     color: #794F01;
@@ -428,7 +439,7 @@ li .redes:hover {
     box-shadow: 0px 0px 15px 0px #794F01;
 }
 
-.contacto-nav a:focus, .lo-que-hago:focus, input[type="submit"]:focus {
+.contacto-nav:focus, .lo-que-hago:focus, input[type="submit"]:focus {
     background-color: black;
     color: rgb(255, 166, 0);
     transition: 0.5s;
@@ -440,7 +451,11 @@ li .redes:hover {
 }
 
 .skills:hover {
-    border: 2px solid orange;
+    border: 1px solid rgb(150, 99, 4);
+}
+
+.skills:hover > h4 {
+    color:rgb(150, 99, 4);
 }
 
 .iconos-focus:hover > i {
@@ -452,6 +467,10 @@ li .redes:hover {
 .proyect:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     transform: scale(1.05);
+}
+
+.proyect:hover > h4 {
+    color: #f04184;
 }
 
 .proyect:focus {
@@ -470,13 +489,9 @@ input:focus, textarea:focus {
  
 }
 
-/* -----------DISPOSITIVOS MÓVILES ---------*/
 
-@media screen and (max-width: 1390px) {
-    .contenedor-proyectos {
-        max-width: 872px;
-    }
-}
+
+/* -----------DISPOSITIVOS MÓVILES ---------*/
 
 
 @media screen and (max-width: 1100px) {
@@ -540,18 +555,7 @@ input:focus, textarea:focus {
     /* MIS PROYECTOS */
 
 
-
-    .contenedor-proyectos {
-        max-width: 632px;
-    }
-
-    .imagenproyecto {
-        max-height: 190px;        
-    }
-
-    .proyect {
-        width: 70vw;
-    }
+    
 
     /* Contactame */
     .contact {
@@ -573,19 +577,34 @@ input:focus, textarea:focus {
     .column {
         width: 450px;
     }
-
     
 }
 
-@media screen and (max-width: 695px) {
+
+
+@media screen and (max-width: 900px) {
+    .proyect {
+        width: calc(100% / 2 - 1em);
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .proyect {
+        width: 100%;
+    }
+
+    .imagen-proyecto {
+        height: 80%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 709px) {
 
     .skillsjuntas {
         max-width: 260px ;
-    }
-
-
-    .contenedor-proyectos {
-        max-width: 320px;
     }
 
 
@@ -593,7 +612,11 @@ input:focus, textarea:focus {
 
 @media screen and (max-width: 600px) {
 
-        
+    .contenedor-proyectos {
+        justify-content: center;
+    }  
+
+    
     .contact-column {
         max-width: 400px;
     }

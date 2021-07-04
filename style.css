@@ -59,7 +59,9 @@ h1, .lo-que-hago, .autor-cita, input[type="submit"], label, .contacto-nav {
     font-weight: bold;
 }
 
-/*---------------NAV---------------------*/
+
+
+/*-------------------NAV---------------------*/
 
 nav {
     background-color: black;
@@ -86,14 +88,12 @@ nav {
     border-radius: 20px;
 }
 
-
 .contacto-nav, .lo-que-hago {
     background-color: rgb(139, 101, 29);
     transition: 0.5s;
 }
 
 
-/* -!!!!!!!!!!!!!!!!!!!!!!!!!-SECCIONES-!!!!!!!!!!!!!!!!!!!!!!!!-------- */
 
 
 /* -------------------HEADER--------------------- */
@@ -103,10 +103,6 @@ nav {
     align-items: center;
     margin: 0 10%;
     height: 100vh;
-}
-
-.derecha-header {
-    min-width: 600px;
 }
 
 .imgpresentacion {
@@ -133,6 +129,8 @@ nav {
 }
 
 
+
+
 /* --------------------MIS CONOCIMIENTOS---------------- */
 .conocimientos {
     background-color: rgb(241, 241, 241);
@@ -152,14 +150,17 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: white;
+    width: 260px;
+    height: 260px ;
     margin: 8px;
     padding: 5px;
     border: 1px solid rgb(219, 218, 218);
-    width: 260px;
-    height: 260px ;
     border-radius: 5px;
     box-shadow: 0px 1px 8px #b3b3b3;
 }
+
+
+
 
 /* -------------------CITA---------------------- */
 
@@ -184,6 +185,9 @@ q {
     color: black;
     font-size: 25px;
 }
+
+
+
 
 /* -------------PROYECTOS------------ */
 
@@ -221,6 +225,9 @@ q {
     flex-wrap: wrap;
     padding-top: 20px;
 }
+
+
+
 
 /* ---------------CONTACTO------------------------ */
 
@@ -293,6 +300,9 @@ input[type="submit"] {
 .contact-media-social a {
     color:black;
 }
+
+
+
 /* --------------------FOOTER------------------------- */
 
 footer {
@@ -337,16 +347,17 @@ li .iconos-footer {
  
 
 .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
     color:white;
     font-size: 20px;
     background-color: rgb(255, 166, 0);
     border-radius: 100%;
-    width: 35px;
-    height: 35px;
+    
     margin: 0 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: 0.5s;
 }
 
@@ -466,17 +477,12 @@ li .redes:hover {
 input:focus, textarea:focus {
     outline: none;
     box-shadow: 0px 0px 15px 0px  #794F01;
- 
 }
-
-
 
 /* -----------DISPOSITIVOS MÓVILES ---------*/
 
 
 @media screen and (max-width: 1100px) {
-    
-
     nav {
         display: none;
     }
@@ -555,10 +561,7 @@ input:focus, textarea:focus {
     .column {
         width: 500px;
     }
-
-    
 }
-
 
 @media screen and (max-width: 900px) {
     .proyect {
@@ -566,8 +569,6 @@ input:focus, textarea:focus {
     }
 
 }
-
-
 
 @media screen and (max-width: 709px) {
 
@@ -589,7 +590,6 @@ input:focus, textarea:focus {
         width: calc(100% - 1em);
     }
 }
-
 
 
 @media screen and (max-width: 600px) {

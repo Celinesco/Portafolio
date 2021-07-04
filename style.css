@@ -62,10 +62,10 @@ h1, .lo-que-hago, .autor-cita, input[type="submit"], label, .contacto-nav {
 /*---------------NAV---------------------*/
 
 nav {
-    padding: 20px 10px;
     background-color: black;
     box-shadow: 0px 5px 8px #888888;
     width:100%;
+    padding: 20px 10px;
     position: fixed;
     line-height: 2.5;
     z-index: 2;
@@ -79,59 +79,41 @@ nav {
 }
 
 .navheader {
-    margin: 0px 10px;
-    border-radius: 20px;
     display: flex;
     justify-content: center;
+    margin: 0px 10px;
     padding: 0 10px;
+    border-radius: 20px;
 }
-
 
 
 .contacto-nav, .lo-que-hago {
     background-color: rgb(139, 101, 29);
     transition: 0.5s;
-    
 }
 
 
-/* ------SECCIONES---------- */
+/* -!!!!!!!!!!!!!!!!!!!!!!!!!-SECCIONES-!!!!!!!!!!!!!!!!!!!!!!!!-------- */
 
 
-/* --------------HEADER/SOBRE MI---------- */
+/* -------------------HEADER--------------------- */
 
-.sobremi {
+.seccion-principal {
     display: flex;
     align-items: center;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin: 0 10%;
     height: 100vh;
 }
 
-.columna1 {
-    min-width: 300px;
-}
-
-.column-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.derecha-header {
     min-width: 600px;
-}
-
-.introtexto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 .imgpresentacion {
     max-width: 700px;
-    display: block;
 }
 
-.presentacion {
+.texto-header {
     color: rgb(129, 126, 126);
     font-size: 150%;
     width: 80%;
@@ -139,20 +121,19 @@ nav {
 }
 
 .lo-que-hago {
-    padding: 15px 0;
-    width:150px;
-    text-align: center;
-    border-radius: 20px;
-    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    padding: 15px 0;
     margin-top: 30px;
-
+    border-radius: 20px;
 }
 
 
-/* ---MIS CONOCIMIENTOS--------- */
+/* --------------------MIS CONOCIMIENTOS---------------- */
 .conocimientos {
     background-color: rgb(241, 241, 241);
 }
@@ -218,7 +199,7 @@ q {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 320px;
+    max-height: 310px;
     width: calc(100% / 3 - 1em);
     margin: 8px;
     padding: 40px;
@@ -308,6 +289,7 @@ input[type="submit"] {
 
 .escribime {
     padding: 0;
+    text-align: left;
 }
 
 .contact-media-social a {
@@ -390,7 +372,7 @@ li .iconos-footer {
 }
 
 
-/* ----HOVER Y FOCUS----- */
+/* ----------------------HOVER Y FOCUS---------------------- */
 
 a {
     display: flex;
@@ -507,7 +489,7 @@ input:focus, textarea:focus {
 
     /* ----INTRODUCCIÓN------ */
     
-    .sobremi {
+    .seccion-principal {
         display:flex;
         flex-direction: column;
         height: 100%;
@@ -515,11 +497,11 @@ input:focus, textarea:focus {
         align-items: center;
     }
 
-    .columna1 {
+    .izquierda-header {
         align-items: center;
     }
 
-    .presentacion {
+    .texto-header {
         text-align: center;
     }
 
@@ -599,8 +581,6 @@ input:focus, textarea:focus {
 }
 
 
-
-
 @media screen and (max-width: 709px) {
 
     .skillsjuntas {
@@ -621,9 +601,6 @@ input:focus, textarea:focus {
         max-width: 400px;
     }
 
-    .escribime {
-        text-align: left;
-    }
 
     input, textarea {
         padding: 10px 15px;
@@ -632,4 +609,20 @@ input:focus, textarea:focus {
         width:300px;
     }
     
+}
+
+@media screen and (max-width: 398px) {
+    .izquierda-header {
+        max-width: 340px;
+        text-align: center;
+    }
+
+    h1 {
+        line-height: 1.5;
+        margin: 30px 0;
+    }
+
+    h2 {
+        font-size: 10vw;
+    }
 }

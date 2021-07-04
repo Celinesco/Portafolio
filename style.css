@@ -60,6 +60,14 @@ h1, .lo-que-hago, .autor-cita, input[type="submit"], label, .contacto-nav {
 }
 
 
+.texto-descripcion {
+    width: 50%;
+    text-align: center;
+    color:gray;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
 
 /*-------------------NAV---------------------*/
 
@@ -90,7 +98,7 @@ nav {
 
 .contacto-nav, .lo-que-hago {
     background-color: rgb(139, 101, 29);
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 
@@ -171,7 +179,6 @@ nav {
 #huevo {
     margin-bottom: 25px;
     width:6%;
-    height: auto;
 }
 
 q {
@@ -229,21 +236,17 @@ q {
 
 
 
-/* ---------------CONTACTO------------------------ */
+/* ------------------------CONTACTO------------------------ */
 
 .contact {
     display: flex;
     width: 1150px;
-    background-color: rgb(221, 221, 221);
     text-align: left;
+    background-color: rgb(221, 221, 221);
     border-radius: 10px;
 }
 
 .contact-column {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
     padding: 40px;
 }
 
@@ -265,7 +268,7 @@ q {
 label {
     margin: 5px 0px 10px;
     font-family: 'Courier New', Courier, monospace;
-    padding:5px;
+    padding: 5px;
 }
 
 input, textarea {
@@ -284,9 +287,11 @@ input[type="submit"] {
     padding: 15px 40px;
     font-size: 15px;
     margin-left: 5px;
+    cursor: pointer;
+    transition: 0.8s;
 }
 
-.campos-obligatorios {
+.texto-campos-obligatorios {
     color:rgb(117, 117, 117);
     font-size: 14px;
     margin-bottom: 20px;
@@ -314,7 +319,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .footer-nav {
@@ -325,6 +329,7 @@ footer {
 .hechopor {
     color:white;
     margin-top: 40px;
+    text-align: center;
 }
 
 .footer-nav li {
@@ -337,14 +342,10 @@ footer {
     align-items: center;
 }
 
-li .iconos-footer {
-    padding: 0;
-}
-
 .iconos-footer {
     height: 55px;
 }
- 
+
 
 .redes {
     display: flex;
@@ -356,17 +357,8 @@ li .iconos-footer {
     font-size: 20px;
     background-color: rgb(255, 166, 0);
     border-radius: 100%;
-    
     margin: 0 10px;
     transition: 0.5s;
-}
-
-.texto-descripcion {
-    width: 50%;
-    text-align: center;
-    color:gray;
-    font-size: 18px;
-    margin: 20px 0;
 }
 
 
@@ -399,30 +391,22 @@ li a:focus {
 }
 
 
-li .iconos-focus:hover {
-    color: #794F01;
-}
-
 li .redes:hover {
     color:rgb(255, 166, 0);
     background-color: white;
     border: 1px solid rgb(255, 166, 0);
 }
 
-
 .lo-que-hago:focus {
     box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
-    outline: none;
 }
 
 .contacto-nav:hover {
     background-color: white;
+    color:black;
     box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
 }
 
-.contacto-nav a:hover, .lo-que-hago:hover{
-    color: black;
-}
 
 .lo-que-hago:hover, input[type="submit"]:hover {
     color: black;
@@ -433,7 +417,6 @@ li .redes:hover {
 .contacto-nav:focus, .lo-que-hago:focus, input[type="submit"]:focus {
     background-color: black;
     color: rgb(255, 166, 0);
-    transition: 0.5s;
 }
 
 .contact-media-social a:focus {
@@ -465,13 +448,12 @@ li .redes:hover {
 }
 
 .proyect:focus {
-    box-shadow: 0 5px 15px rgb(255, 166, 0);
+    box-shadow: #f04184 0px 2px 8px;
 }
 
 .iconos-footer:focus {
     box-shadow: rgb(255, 166, 0) 0px 0px 8px 0px;     
     height: 55px;
-    
 }
 
 input:focus, textarea:focus {
@@ -534,14 +516,13 @@ input:focus, textarea:focus {
 
     /* CITA */
     
+    /* el huevo lo dejé con id porque quiero que algún día se rompa y no se si se puede hacer con JavaS eso */
     #huevo {
-        width: 30%;
+        width: 20%;
     }
 
-    /* MIS PROYECTOS */
-
-
     /* Contactame */
+    
     .contact {
         max-width: fit-content;
         flex-direction: column;
@@ -567,8 +548,8 @@ input:focus, textarea:focus {
     .proyect {
         width: calc(100% / 2 - 1em);
     }
-
 }
+
 
 @media screen and (max-width: 709px) {
 
@@ -586,25 +567,13 @@ input:focus, textarea:focus {
         width: 100vw;
     }
 
-    input, textarea {
-        width: calc(100% - 1em);
-    }
-}
-
-
-@media screen and (max-width: 600px) {
-
     .contenedor-proyectos {
         justify-content: center;
     }  
 
-    @media screen and (max-width: 600px) {
-       
-    }
     input, textarea {
         width: calc(100vw - 20%);
     }
-
     
 }
 

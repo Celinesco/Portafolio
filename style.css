@@ -161,7 +161,7 @@ nav {
     box-shadow: 0px 1px 8px #b3b3b3;
 }
 
-/* ------CITA----- */
+/* -------------------CITA---------------------- */
 
 .cita {
     background: linear-gradient(0deg, rgba(198,129,0,1) 1%, rgba(255,166,0,1) 51%, rgba(255,208,118,1) 100%);
@@ -180,7 +180,7 @@ q {
 }
 
 .autor-cita {
-    margin-top: 5%;
+    margin-top: 4%;
     color: black;
     font-size: 25px;
 }
@@ -211,12 +211,10 @@ q {
     text-align: center;
 }
 
-
 .imagen-proyecto {
     width: 100%;
     height: 80%;
 }
-
 
 .contenedor-proyectos {
     display: flex;
@@ -224,23 +222,22 @@ q {
     padding-top: 20px;
 }
 
-/* ---------------CONTACTO------- */
+/* ---------------CONTACTO------------------------ */
 
 .contact {
-    text-align: left;
-    background-color: rgb(221, 221, 221);
-    border-radius: 10px;
     display: flex;
     width: 1150px;
+    background-color: rgb(221, 221, 221);
+    text-align: left;
+    border-radius: 10px;
 }
 
 .contact-column {
-    padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width:50%;
+    padding: 40px;
 }
 
 .rows {
@@ -538,8 +535,6 @@ input:focus, textarea:focus {
     /* MIS PROYECTOS */
 
 
-    
-
     /* Contactame */
     .contact {
         max-width: fit-content;
@@ -558,16 +553,26 @@ input:focus, textarea:focus {
     }
 
     .column {
-        width: 450px;
+        width: 500px;
     }
+
     
 }
-
 
 
 @media screen and (max-width: 900px) {
     .proyect {
         width: calc(100% / 2 - 1em);
+    }
+
+}
+
+
+
+@media screen and (max-width: 709px) {
+
+    .skillsjuntas {
+        max-width: 260px ;
     }
 }
 
@@ -576,20 +581,16 @@ input:focus, textarea:focus {
         width: 100%;
     }
 
-    .imagen-proyecto {
-        height: 80%;
+    .contact-column {
+        width: 100vw;
+    }
+
+    input, textarea {
+        width: calc(100% - 1em);
     }
 }
 
 
-@media screen and (max-width: 709px) {
-
-    .skillsjuntas {
-        max-width: 260px ;
-    }
-
-
-}
 
 @media screen and (max-width: 600px) {
 
@@ -597,18 +598,13 @@ input:focus, textarea:focus {
         justify-content: center;
     }  
 
-    
-    .contact-column {
-        max-width: 400px;
+    @media screen and (max-width: 600px) {
+       
     }
-
-
     input, textarea {
-        padding: 10px 15px;
-        border-radius: 20px;
-        border: none;
-        width:300px;
+        width: calc(100vw - 20%);
     }
+
     
 }
 
@@ -626,4 +622,19 @@ input:focus, textarea:focus {
     h2 {
         font-size: 10vw;
     }
+
+    .autor-cita {
+        text-align: center;
+    }
+
+    input[type="submit"] {
+        display: flex;
+        justify-content: center;
+    }
+
+    .campos-obligatorios {
+        width: 150px;
+    }
+    
+
 }

@@ -1,5 +1,7 @@
 # Proyecto: Portafolio 🐢
 
+![alt text](imagenes-portafolio/portadaportafolio.svg)
+
 Portafolio personal, realizado con los conocimientos de **HTML** y **CSS** adquiridos hasta el momento en el curso de Front-End de Ada. El proyecto no está finalizado, se irá modificando a lo largo de la cursada.
 
 ### URL del proyecto: 

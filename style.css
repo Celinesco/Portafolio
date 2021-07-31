@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+/* no es correcto */
 body, html {
     overflow-x: hidden;
 }
@@ -26,6 +27,8 @@ svg {
     margin-top: 6px;
 }
 
+/* mantené una convención para tus font size: o pixeles, o porcentajes
+sino calcular el tamaño final de cada uno se vuelve muy dificil */
 h1 {
     color: rgb(139, 101, 29);
     font-size: 300%;
@@ -121,6 +124,7 @@ nav {
     color: rgb(129, 126, 126);
     font-size: 150%;
     width: 80%;
+    /* innecesario, es lo que ocurre por defecto */
     text-align: left;
 }
 
@@ -376,6 +380,7 @@ footer {
 /* ----------------------HOVER Y FOCUS---------------------- */
 
 a {
+    /* los links no son contenedores, no deberían tener flex */
     display: flex;
     align-items: center;
     outline: none;

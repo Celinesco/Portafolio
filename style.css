@@ -55,12 +55,12 @@ section {
     align-items: center;
 }
 
-h1, .lo-que-hago, .autor-cita, input[type="submit"], label, .contacto-nav {
+h1, .link-to-projects, .autor-cita, input[type="submit"], label, .contact-nav {
     font-weight: bold;
 }
 
 
-.texto-descripcion {
+.text-description {
     width: 50%;
     text-align: center;
     color:gray;
@@ -96,7 +96,7 @@ nav {
     border-radius: 20px;
 }
 
-.contacto-nav, .lo-que-hago {
+.contact-nav, .link-to-projects {
     background-color: rgb(139, 101, 29);
     transition: 0.7s;
 }
@@ -104,27 +104,27 @@ nav {
 
 
 
-/* -------------------HEADER--------------------- */
+/* -------------------Seccion Principal--------------------- */
 
-.seccion-principal {
+.main-section {
     display: flex;
     align-items: center;
     margin: 0 10%;
     height: 100vh;
 }
 
-.imgpresentacion {
+.img-presentation {
     max-width: 700px;
 }
 
-.texto-header {
+.text-header {
     color: rgb(129, 126, 126);
     font-size: 150%;
     width: 80%;
     text-align: left;
 }
 
-.lo-que-hago {
+.link-to-projects {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,12 +139,12 @@ nav {
 
 
 
-/* --------------------MIS CONOCIMIENTOS---------------- */
+/* --------------------MIS software-tools---------------- */
 .conocimientos {
     background-color: rgb(241, 241, 241);
 }
 
-.skillsjuntas {
+.skills-container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -172,7 +172,7 @@ nav {
 
 /* -------------------CITA---------------------- */
 
-.cita {
+.quote {
     background: linear-gradient(0deg, rgba(198,129,0,1) 1%, rgba(255,166,0,1) 51%, rgba(255,208,118,1) 100%);
 }
 
@@ -187,7 +187,7 @@ q {
     text-align: center;
 }
 
-.autor-cita {
+.autor-quote {
     margin-top: 4%;
     color: black;
     font-size: 25px;
@@ -196,9 +196,9 @@ q {
 
 
 
-/* -------------PROYECTOS------------ */
+/* -------------projects------------ */
 
-.columna-proyectos {
+.column-projects {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -222,12 +222,12 @@ q {
     text-align: center;
 }
 
-.imagen-proyecto {
+.proyect-image {
     width: 100%;
     height: 80%;
 }
 
-.contenedor-proyectos {
+.projects-container {
     display: flex;
     flex-wrap: wrap;
     padding-top: 20px;
@@ -260,7 +260,7 @@ q {
     margin-left: 10px;
 }
 
-.texto-contactame {
+.contact-text {
     margin-bottom: 30px;
     text-align: justify;
 }
@@ -302,7 +302,7 @@ input[type="submit"] {
     text-align: left;
 }
 
-.contact-media-social a {
+.contact-social-media a {
     color:black;
 }
 
@@ -326,7 +326,7 @@ footer {
     line-height: 2.5;
 }
 
-.hechopor {
+.autor-website {
     color:white;
     margin-top: 40px;
     text-align: center;
@@ -336,13 +336,13 @@ footer {
     margin: 0 20px 50px 20px;
 }
 
-.footer-iconos-sociales {
+.footer-icons-sociales {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.iconos-footer {
+.icons-footer {
     height: 55px;
 }
 
@@ -362,7 +362,7 @@ footer {
 }
 
 
-.contact-media-social {
+.contact-social-media {
     width: 160px;
     height: 60px;
     margin:10px;
@@ -397,29 +397,29 @@ li .redes:hover {
     border: 1px solid rgb(255, 166, 0);
 }
 
-.lo-que-hago:focus {
+.link-to-proyects:focus {
     box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
 }
 
-.contacto-nav:hover {
+.contact-nav:hover {
     background-color: white;
     color:black;
     box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
 }
 
 
-.lo-que-hago:hover, input[type="submit"]:hover {
+.link-to-projects:hover, input[type="submit"]:hover {
     color: black;
     background-color: white;
     box-shadow: 0px 0px 15px 0px #794F01;
 }
 
-.contacto-nav:focus, .lo-que-hago:focus, input[type="submit"]:focus {
+.contact-nav:focus, .link-to-projects:focus, input[type="submit"]:focus {
     background-color: black;
     color: rgb(255, 166, 0);
 }
 
-.contact-media-social a:focus {
+.contact-social-media a:focus {
     box-shadow: 0px 0px 15px 0px  #794F01;
     width: 90%;
 }
@@ -432,7 +432,7 @@ li .redes:hover {
     color:rgb(150, 99, 4);
 }
 
-.iconos-focus:hover > i {
+.icons-focus:hover > i {
     color:rgb(255, 166, 0);
     background-color: white;
     border: 1px solid rgb(255, 166, 0);
@@ -451,7 +451,7 @@ li .redes:hover {
     box-shadow: #f04184 0px 2px 8px;
 }
 
-.iconos-footer:focus {
+.icons-footer:focus {
     box-shadow: rgb(255, 166, 0) 0px 0px 8px 0px;     
     height: 55px;
 }
@@ -475,7 +475,7 @@ input:focus, textarea:focus {
 
     /* ----INTRODUCCIÓN------ */
     
-    .seccion-principal {
+    .main-section {
         display:flex;
         flex-direction: column;
         height: 100%;
@@ -483,7 +483,7 @@ input:focus, textarea:focus {
         align-items: center;
     }
 
-    .izquierda-header {
+    .left-header {
         align-items: center;
     }
 
@@ -510,7 +510,7 @@ input:focus, textarea:focus {
         width: 100%;
     }
 
-    .skillsjuntas {
+    .skills-container {
         max-width: 552px ;
     }
 
@@ -567,7 +567,7 @@ input:focus, textarea:focus {
         width: 100vw;
     }
 
-    .contenedor-proyectos {
+    .proyects-container {
         justify-content: center;
     }  
 
@@ -578,7 +578,7 @@ input:focus, textarea:focus {
 }
 
 @media screen and (max-width: 398px) {
-    .izquierda-header {
+    .left-header {
         max-width: 340px;
         text-align: center;
     }
@@ -592,7 +592,7 @@ input:focus, textarea:focus {
         font-size: 10vw;
     }
 
-    .autor-cita {
+    .autor-quote {
         text-align: center;
     }
 

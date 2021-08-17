@@ -81,7 +81,7 @@ nav {
     z-index: 2;
 }
 
-.nav {
+.list-nav-links {
     display: flex;
     justify-content: flex-end;
     margin: 5px 0;
@@ -136,11 +136,15 @@ nav {
     border-radius: 20px;
 }
 
+.left-header {
+    min-width: 400px;
+}
 
 
 
-/* --------------------MIS software-tools---------------- */
-.conocimientos {
+
+/* --------------------MIS CONOCIMIENTOS---------------- */
+.software-tools {
     background-color: rgb(241, 241, 241);
 }
 
@@ -206,7 +210,7 @@ q {
     max-width: 1100px;
 }
 
-.proyect {
+.project {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -222,7 +226,7 @@ q {
     text-align: center;
 }
 
-.proyect-image {
+.project-image {
     width: 100%;
     height: 80%;
 }
@@ -314,9 +318,6 @@ input[type="submit"] {
 footer {
     background-color: black;
     padding: 80px;
-}
-
-.footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -439,16 +440,16 @@ li .redes:hover {
     border: 1px solid rgb(255, 166, 0);
 }
 
-.proyect:hover {
+.project:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     transform: scale(1.05);
 }
 
-.proyect:hover > h4 {
+.project:hover > h4 {
     color: #f04184;
 }
 
-.proyect:focus {
+.project:focus {
     box-shadow: #f04184 0px 2px 8px;
 }
 
@@ -546,7 +547,7 @@ input:focus, textarea:focus {
 }
 
 @media screen and (max-width: 900px) {
-    .proyect {
+    .project {
         width: calc(100% / 2 - 1em);
     }
 }
@@ -554,13 +555,13 @@ input:focus, textarea:focus {
 
 @media screen and (max-width: 709px) {
 
-    .skillsjuntas {
+    .skills-container {
         max-width: 260px ;
     }
 }
 
 @media screen and (max-width: 610px) {
-    .proyect {
+    .project {
         width: 100%;
     }
 
@@ -568,7 +569,7 @@ input:focus, textarea:focus {
         width: 100vw;
     }
 
-    .proyects-container {
+    .projects-container {
         justify-content: center;
     }  
 

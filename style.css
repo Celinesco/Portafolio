@@ -106,9 +106,10 @@ nav {
 
 /* -------------------Seccion Principal--------------------- */
 
+
 .main-section {
-    display: flex;
-    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     margin: 0 10%;
     height: 100vh;
 }
@@ -242,7 +243,7 @@ q {
 
 /* ------------------------CONTACTO------------------------ */
 
-.contact {
+.contact-container {
     display: flex;
     width: 1150px;
     text-align: left;
@@ -525,7 +526,7 @@ input:focus, textarea:focus {
 
     /* Contactame */
     
-    .contact {
+    .contact-container {
         max-width: fit-content;
         flex-direction: column;
     }

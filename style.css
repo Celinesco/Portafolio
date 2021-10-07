@@ -469,7 +469,7 @@ input:focus, textarea:focus {
 /* Celulares */
 
 /* Celulares en modo horizontal y tablets pequeñas */
-@media (max-width: 768px) { ... }
+
 /* Tablets  */
 @media (max-width: 992px) { ... }
 /* Monitores pequeños */
@@ -565,16 +565,15 @@ input:focus, textarea:focus {
 }
 
 
-@media screen and (max-width: 709px) {
+@media (max-width: 768px) {     
 
     .skills-container {
-        max-width: 260px ;
-    }
-}
+            max-width: 260px ;
+        }
 
-@media screen and (max-width: 610px) {
     .project {
         width: 100%;
+        height: 35vh;
     }
 
     .contact-column {
@@ -583,13 +582,15 @@ input:focus, textarea:focus {
 
     .projects-container {
         justify-content: center;
+        max-width: 60vw;
     }  
 
     input, textarea {
         width: calc(100vw - 20%);
-    }
-    
+    } 
+
 }
+
 
 
 @media (max-width: 576px) {    
@@ -604,6 +605,7 @@ h1 {
     margin: 30px 0;
     max-width: 300px;
 }
+
 
 h2 {
     font-size: 10vw;
@@ -623,9 +625,3 @@ input[type="submit"] {
 } 
 
 
-/* }
-@media screen and (max-width: 398px) {
- 
-    
-
-} */

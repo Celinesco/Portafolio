@@ -8,9 +8,6 @@
     box-sizing: border-box;
 }
 
-body, html {
-    overflow-x: hidden;
-}
 
 a:link, a:active, a:visited {
     text-decoration:none;
@@ -114,9 +111,19 @@ nav {
     height: 100vh;
 }
 
-.img-presentation {
-    max-width: 700px;
+.main-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    
 }
+
+.img-presentation {
+    height: 40%;
+    width: 80%;
+    overflow-x: hidden;
+}
+
 
 .text-header {
     color: rgb(129, 126, 126);
@@ -138,7 +145,7 @@ nav {
 }
 
 .left-header {
-    min-width: 400px;
+    min-width: 270px;
 }
 
 
@@ -218,7 +225,7 @@ q {
     max-height: 310px;
     width: calc(100% / 3 - 1em);
     margin: 8px;
-    padding: 40px;
+    padding: 30px;
     overflow: hidden;
     border: 1px solid rgb(219, 218, 218);
     border-radius: 10px;
@@ -276,6 +283,8 @@ label {
     padding: 5px;
 }
 
+
+
 input, textarea {
     padding: 10px 15px;
     border-radius: 20px;
@@ -312,6 +321,9 @@ input[type="submit"] {
     color:black;
 }
 
+.formular {
+    width: 100%;
+}
 
 
 /* --------------------FOOTER------------------------- */
@@ -473,7 +485,7 @@ input:focus, textarea:focus {
 
 
 /* Monitores grandes */
-@media (max-width: 1400px) { ... }
+
 
 
 /* Monitores pequeños */
@@ -549,13 +561,14 @@ input:focus, textarea:focus {
 
     .rows {
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
-
+/* 
     .column {
         width: 500px;
     }
-}
+} */
 
 /* Tablets  */
 
@@ -589,10 +602,11 @@ input:focus, textarea:focus {
         max-width: 60vw;
     }  
 
-    input, textarea {
-        width: calc(100vw - 20%);
-    } 
+    #fname, #lname {
+        width: calc(100vw / 2.3 - 1em)
+    }
 
+   
 }
 
 /* Celulares */
@@ -620,13 +634,31 @@ h2 {
 }
 
 input[type = "submit"] {
+
     display: flex;
     justify-content: center;
 }
+
+#fname, #lname {
+    width: 75vw;
+}
+
 
 .text-required-fields {
     width: 150px;
 } 
 
+.img-presentation {
+    width: 90vw;
+   
+}
+
+.project-image {
+    height: 60%;
+}
+
+ h4 {
+ font-size: 15px;
+}
 
 }

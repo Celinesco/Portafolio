@@ -8,6 +8,12 @@
     box-sizing: border-box;
 }
 
+.dark-mode-background {
+    background-color: black;
+}
+
+
+
 
 a:link, a:active, a:visited {
     text-decoration:none;
@@ -16,7 +22,9 @@ a:link, a:active, a:visited {
 
 ul {
     list-style: none;
+    
 }
+
 
 svg {
     width: 40%;
@@ -60,7 +68,7 @@ h1, .link-to-projects, .autor-cita, input[type="submit"], label, .contact-nav {
 .text-description {
     width: 50%;
     text-align: center;
-    color:gray;
+    color:rgb(61, 61, 61);
     font-size: 18px;
     margin: 20px 0;
 }
@@ -69,20 +77,76 @@ h1, .link-to-projects, .autor-cita, input[type="submit"], label, .contact-nav {
 /*-------------------NAV---------------------*/
 
 nav {
+    display: flex;
+    justify-content: space-between;
     background-color: black;
-    box-shadow: 0px 5px 8px #888888;
+    box-shadow: 0px 5px 8px #ffd484;
     width:100%;
-    padding: 20px 10px;
+    padding: 20px 80px;
     position: fixed;
     line-height: 2.5;
-    z-index: 2;
 }
+
+.switch {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(248, 248, 248);
+    border-radius: 200px;
+    width: 80px;
+    height: 35px;
+    border: 1px solid white;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: 0.8;
+    transition: background-color 0.2s linear;
+}
+
+.switch-light-mode {
+    background:rgb(31, 31, 31);
+    transition: background-color 0.2s linear;
+}
+
+.switch span {
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(235, 181, 4);  
+}
+
+#lamp-yellow {
+    color: black
+}
+
+
+
+.circle {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    border-radius: 100%;
+    top: 0;
+    background-color: rgb(160, 109, 13);
+    position: absolute;
+    left: 0;
+    right: unset;
+    border: 2px solid rgb(0, 0, 0);
+  
+}
+
+
+.circle-dark-mode {
+    left: unset;
+    right: 0;  
+}
+
+
 
 .list-nav-links {
     display: flex;
     justify-content: flex-end;
     margin: 5px 0;
-    margin-right: 10%;
+    margin: 0px 70px;
 }
 
 .link-nav {
@@ -126,7 +190,7 @@ nav {
 
 
 .text-header {
-    color: rgb(129, 126, 126);
+    color: rgb(39, 39, 39);
     font-size: 150%;
     width: 80%;
     text-align: left;
@@ -169,7 +233,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
     width: 260px;
     height: 260px ;
     margin: 8px;
@@ -227,7 +290,7 @@ q {
     margin: 8px;
     padding: 30px;
     overflow: hidden;
-    border: 1px solid rgb(219, 218, 218);
+    border: 1px solid rgb(219, 219, 219);
     border-radius: 10px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: transform 2s;
@@ -475,6 +538,28 @@ input:focus, textarea:focus {
     outline: none;
     box-shadow: 0px 0px 15px 0px  #794F01;
 }
+
+
+
+/* //////////////////////DARK MODE //////////////*/
+
+
+
+.dark-mode-font {
+    color: white;
+}
+
+.dark-mode-background-section {
+    background-color: rgb(34, 34, 34);
+}
+
+.project-dark-mode {
+    background-color: #4e4949;
+    border: 1px solid rgba(204, 133, 2, 0.63);
+    box-shadow: 0px 0px 10px 0px rgb(255, 166, 0);
+}
+
+
 
 /* -----------DISPOSITIVOS MÓVILES ---------*/
 

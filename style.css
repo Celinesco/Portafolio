@@ -471,13 +471,13 @@ input:focus, textarea:focus {
 /* Celulares en modo horizontal y tablets pequeñas */
 
 
-/* Monitores pequeños */
-@media (max-width: 1200px) { ... }
+
 /* Monitores grandes */
 @media (max-width: 1400px) { ... }
 
 
-@media screen and (max-width: 1100px) {
+/* Monitores pequeños */
+@media (max-width: 1200px) {
     nav {
         display: none;
     }
@@ -595,7 +595,7 @@ input:focus, textarea:focus {
 
 }
 
-
+/* Celulares */
 
 @media (max-width: 576px) {    
     

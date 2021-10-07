@@ -467,7 +467,7 @@ input:focus, textarea:focus {
 /* -----------DISPOSITIVOS MÓVILES ---------*/
 
 /* Celulares */
-@media (max-width: 576px) { ... }
+
 /* Celulares en modo horizontal y tablets pequeñas */
 @media (max-width: 768px) { ... }
 /* Tablets  */
@@ -591,33 +591,41 @@ input:focus, textarea:focus {
     
 }
 
-@media screen and (max-width: 398px) {
+
+@media (max-width: 576px) {    
+    
     .left-header {
-        max-width: 340px;
-        text-align: center;
-    }
+    max-width: 340px;
+    text-align: center;
+}
 
-    h1 {
-        line-height: 1.5;
-        margin: 30px 0;
-    }
+h1 {
+    line-height: 1.5;
+    margin: 30px 0;
+    max-width: 300px;
+}
 
-    h2 {
-        font-size: 10vw;
-    }
+h2 {
+    font-size: 10vw;
+}
 
-    .autor-quote {
-        text-align: center;
-    }
+.autor-quote {
+    text-align: center;
+}
 
-    input[type="submit"] {
-        display: flex;
-        justify-content: center;
-    }
+input[type="submit"] {
+    display: flex;
+    justify-content: center;
+}
 
-    .text-required-fields {
-        width: 150px;
-    }
+.text-required-fields {
+    width: 150px;
+} 
+
+
+/* }
+@media screen and (max-width: 398px) {
+ 
     
 
-}
+} */

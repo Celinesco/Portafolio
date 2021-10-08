@@ -84,6 +84,7 @@ nav {
     width:100%;
     padding: 20px 80px;
     position: fixed;
+    z-index: 2;
     line-height: 2.5;
 }
 
@@ -111,7 +112,7 @@ nav {
 .switch span {
     font-size: 20px;
     line-height: 30px;
-    color: rgb(235, 181, 4);  
+    color: rgb(255, 255, 255);  
 }
 
 #lamp-yellow {
@@ -126,7 +127,7 @@ nav {
     position: absolute;
     border-radius: 100%;
     top: 0;
-    background-color: rgb(160, 109, 13);
+    background-color: rgb(139, 101, 29);
     position: absolute;
     left: 0;
     right: unset;
@@ -162,6 +163,70 @@ nav {
     transition: 0.7s;
 }
 
+.buttons-nav-bar {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
+
+/* menu hamburguesa */
+
+.fa-bars {
+    color:rgb(139, 101, 29);
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.container-menu-hamburguesa {
+    height: 100%;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: -100%;
+    transition: 0.8s;   
+    z-index: 3;
+}
+
+.container-close-menu-hamburguesa {
+    position: absolute;
+    top:0;
+    right: 0;
+
+}
+
+.fa-times {
+   font-size: 20px;
+   color: white;
+   margin: 25px;
+   cursor: pointer;
+
+}
+
+.links-list-menu-hamburguesa {
+   height: 500px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    
+}
+
+.social-icons-hamburguesa {
+    display: flex;
+    height: 100px;
+    align-items: flex-end;
+    
+    
+}
+
+li > .link-nav-menu-hamburguesa {
+  margin: 25px 0px;
+}
 
 
 
@@ -425,6 +490,7 @@ footer {
 }
 
 
+
 .redes {
     display: flex;
     justify-content: center;
@@ -438,6 +504,8 @@ footer {
     margin: 0 10px;
     transition: 0.5s;
 }
+
+
 
 
 .contact-social-media {
@@ -503,11 +571,11 @@ li .redes:hover {
 }
 
 .skills:hover {
-    border: 1px solid rgb(150, 99, 4);
+    border: 1px solid rgb(194, 128, 6);
 }
 
 .skills:hover > h4 {
-    color:rgb(150, 99, 4);
+    color:rgb(194, 128, 6);
 }
 
 .icons-focus:hover > i {
@@ -575,9 +643,21 @@ input:focus, textarea:focus {
 
 /* Monitores pequeños */
 @media (max-width: 1200px) {
+    
     nav {
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+
+    .list-nav-links {
         display: none;
     }
+
+    .fa-bars {
+        display: contents;
+    }
+
+
 
     h2 {
         text-align: center;
@@ -658,7 +738,7 @@ input:focus, textarea:focus {
 /* Tablets  */
 
 @media (max-width: 992px) {  
-    
+
     .project {
     width: calc(100% / 2 - 1em);
  } 
@@ -747,3 +827,4 @@ input[type = "submit"] {
 }
 
 }
+

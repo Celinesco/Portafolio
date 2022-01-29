@@ -186,7 +186,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: -100%;
     transition: 0.8s;   
     z-index: 3;
@@ -412,9 +412,6 @@ label {
     font-family: 'Courier New', Courier, monospace;
     padding: 5px;
 }
-
-
-
 input, textarea {
     padding: 10px 15px;
     border-radius: 20px;
@@ -490,9 +487,6 @@ footer {
 .icons-footer {
     height: 55px;
 }
-
-
-
 .redes {
     display: flex;
     justify-content: center;
@@ -506,10 +500,6 @@ footer {
     margin: 0 10px;
     transition: 0.5s;
 }
-
-
-
-
 .contact-social-media {
     width: 160px;
     height: 60px;
@@ -618,11 +608,9 @@ input:focus, textarea:focus {
 .dark-mode-font {
     color: white;
 }
-
 .dark-mode-background-section {
     background-color: rgb(34, 34, 34);
 }
-
 .project-dark-mode {
     background-color: #4e4949;
     border: 1px solid rgba(204, 133, 2, 0.63);
@@ -645,22 +633,16 @@ input:focus, textarea:focus {
 
 /* Monitores pequeños */
 @media (max-width: 1200px) {
-    
     nav {
         justify-content: flex-end;
         padding-right: 10px;
     }
-
     .list-nav-links {
         display: none;
     }
-
     .fa-bars {
         display: contents;
     }
-
-
-
     h2 {
         text-align: center;
     }
@@ -674,11 +656,9 @@ input:focus, textarea:focus {
         justify-content: center;
         align-items: center;
     }
-
     .left-header {
         align-items: center;
     }
-
     .text-header {
         text-align: center;
     }
@@ -689,43 +669,35 @@ input:focus, textarea:focus {
         flex-direction: column;
         align-items: center;
     }
-
     
     /* -------MIS CONOCIMIENTOS---------- */
-   
+
     .skills {
         max-width:280px;
         max-height: 280px;
     }
-
     .skilldescription {
         width: 100%;
     }
-
     .skills-container {
         max-width: 552px ;
     }
-
     /* CITA */
     
     /* el huevo lo dejé con id porque quiero que algún día se rompa y no se si se puede hacer con JavaS eso */
     #huevo {
         width: 20%;
     }
-
     /* Contactame */
-    
     .contact-container {
         max-width: fit-content;
         flex-direction: column;
     }
-
     .contact-column {
         width: 600px;
         display: flex;
         flex-wrap: wrap;
     }
-
     .rows {
         display: flex;
         justify-content: space-between;
@@ -736,94 +708,72 @@ input:focus, textarea:focus {
         width: 500px;
     }
 } */
+}
 
 /* Tablets  */
 
 @media (max-width: 992px) {  
-
     .project {
     width: calc(100% / 2 - 1em);
  } 
-
 }
-
 /* Celulares en modo horizontal y tablets pequeñas */
 
 @media (max-width: 768px) {     
-
     .skills-container {
             max-width: 260px ;
         }
-
     .project {
         width: 100%;
         height: 35vh;
     }
-
     .contact-column {
         width: 100vw;
     }
-
     .projects-container {
         justify-content: center;
         max-width: 60vw;
     }  
-
     #fname, #lname {
         width: calc(100vw / 2.3 - 1em)
-    }
-
-   
+    }   
 }
 
 /* Celulares */
 
 @media (max-width: 576px) {    
-    
+   
 .left-header {
     max-width: 340px;
     text-align: center;
 }
-
 h1 {
     line-height: 1.5;
     margin: 30px 0;
     max-width: 300px;
 }
-
-
 h2 {
     font-size: 10vw;
 }
-
 .autor-quote {
     text-align: center;
 }
-
 input[type = "submit"] {
-
     display: flex;
     justify-content: center;
 }
-
 #fname, #lname {
     width: 75vw;
 }
-
-
 .text-required-fields {
     width: 150px;
 } 
-
 .img-presentation {
     width: 90vw;
-   
 }
-
 .project-image {
     height: 60%;
 }
-
  h4 {
  font-size: 15px;
 }

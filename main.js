@@ -10,6 +10,7 @@ const openMenuHamburguesa = document.getElementById("open-menu-hamburguesa");
 const containerBurgerMenu = document.getElementById("container-menu-hamburguesa");
 const closeMenuHamburgesa = document.getElementById("close-container-menu-hamburguesa")
 const allSections = document.getElementById("all-sections");
+const linksMenuHamburguesa = document.querySelectorAll(".link-nav-menu-hamburguesa")
 //Funcionalidad modo oscuro
 
 
@@ -34,14 +35,17 @@ buttonDarkMode.onclick = () => {
 
 openMenuHamburguesa.onclick = () => {
     containerBurgerMenu.style.top = "0"
-    allSections.style.display = "none";
    
    
 }
 
 closeMenuHamburgesa.onclick = () => {
     containerBurgerMenu.style.top = "-100%"
-    allSections.style.display = "contents";
     
 }
 
+linksMenuHamburguesa.forEach ((link) => {
+    link.onclick = ()=> {
+        containerBurgerMenu.style.top = "-100%"
+    }
+})

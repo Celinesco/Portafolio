@@ -9,23 +9,16 @@
 }
 
 .dark-mode-background {
-    background-color: black;
+    background-color: #000000;
 }
-
-
-
 
 a:link, a:active, a:visited {
     text-decoration:none;
-    color:white;
 }
 
 ul {
-    list-style: none;
-    
+    list-style: none;   
 }
-
-
 svg {
     width: 40%;
     margin-top: 6px;
@@ -46,13 +39,11 @@ h2 {
 h4 {
     font-size: 18px;
     margin: 20px 0px 16px;
-    color:black;
+    color:#000000;
 }
-
 h3 {
     font-size: 200%;
 }
-
 section {
     padding: 110px 40px 130px;
     display: flex;
@@ -79,7 +70,7 @@ h1, .link-to-projects, .autor-cita, input[type="submit"], label, .contact-nav {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: #000000;
     box-shadow: 0px 5px 8px #ffd484;
     width:100%;
     padding: 20px 80px;
@@ -96,7 +87,7 @@ nav {
     border-radius: 200px;
     width: 80px;
     height: 35px;
-    border: 1px solid white;
+    border: 1px solid #ffffff;
     position: relative;
     cursor: pointer;
     outline: none;
@@ -116,11 +107,8 @@ nav {
 }
 
 #lamp-yellow {
-    color: black
+    color: #000000
 }
-
-
-
 .circle {
     width: 35px;
     height: 35px;
@@ -134,20 +122,20 @@ nav {
     border: 2px solid rgb(0, 0, 0);
   
 }
-
-
 .circle-dark-mode {
     left: unset;
     right: 0;  
 }
-
-
 
 .list-nav-links {
     display: flex;
     justify-content: flex-end;
     margin: 5px 0;
     margin: 0px 70px;
+}
+
+.list-nav-links a {
+    color: #ffffff;
 }
 
 .link-nav {
@@ -196,15 +184,13 @@ nav {
     position: absolute;
     top:0;
     right: 0;
-
 }
 
 .fa-times {
    font-size: 20px;
-   color: white;
+   color: #ffffff;
    margin: 25px;
    cursor: pointer;
-
 }
 
 .links-list-menu-hamburguesa {
@@ -215,15 +201,12 @@ nav {
    justify-content: center;
    font-size: 20px;
    font-weight: bold;
-    
 }
 
 .social-icons-hamburguesa {
     display: flex;
     height: 100px;
     align-items: flex-end;
-    
-    
 }
 
 li > .link-nav-menu-hamburguesa {
@@ -273,7 +256,9 @@ li > .link-nav-menu-hamburguesa {
     padding: 15px 0;
     margin-top: 30px;
     border-radius: 20px;
+    color: white;
 }
+
 
 .left-header {
     min-width: 270px;
@@ -331,7 +316,7 @@ q {
 
 .autor-quote {
     margin-top: 4%;
-    color: black;
+    color: #000000;
     font-size: 25px;
 }
 
@@ -444,19 +429,18 @@ input[type="submit"] {
     text-align: left;
 }
 
-.contact-social-media a {
-    color:black;
-}
-
 .formular {
     width: 100%;
 }
 
+.icons-focus {
+    color: #000000
+}
 
 /* --------------------FOOTER------------------------- */
 
 footer {
-    background-color: black;
+    background-color: #000000;
     padding: 80px;
     display: flex;
     flex-direction: column;
@@ -469,7 +453,7 @@ footer {
 }
 
 .autor-website {
-    color:white;
+    color:#ffffff;
     margin-top: 40px;
     text-align: center;
 }
@@ -478,10 +462,18 @@ footer {
     margin: 0 20px 50px 20px;
 }
 
+.footer-nav a {
+    color: #ffffff;
+}
+
 .footer-social-icons {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer-social-icons a {
+    color: white
 }
 
 .icons-footer {
@@ -493,7 +485,7 @@ footer {
     align-items: center;
     width: 35px;
     height: 35px;
-    color:white;
+    color:#ffffff;
     font-size: 20px;
     background-color: rgb(255, 166, 0);
     border-radius: 100%;
@@ -509,6 +501,8 @@ footer {
     margin-top: 10px;
     margin-left:5px;
 }
+
+
 
 
 /* ----------------------HOVER Y FOCUS---------------------- */
@@ -531,7 +525,7 @@ li a:focus {
 
 li .redes:hover {
     color:rgb(255, 166, 0);
-    background-color: white;
+    background-color: #ffffff;
     border: 1px solid rgb(255, 166, 0);
 }
 
@@ -540,20 +534,20 @@ li .redes:hover {
 }
 
 .contact-nav:hover {
-    background-color: white;
-    color:black;
+    background-color: #ffffff;
+    color:#000000;
     box-shadow: 0px 0px 15px 0px rgb(255, 166, 0);
 }
 
 
 .link-to-projects:hover, input[type="submit"]:hover {
-    color: black;
-    background-color: white;
+    color: #000000;
+    background-color: #ffffff;
     box-shadow: 0px 0px 15px 0px #794F01;
 }
 
 .contact-nav:focus, .link-to-projects:focus, input[type="submit"]:focus {
-    background-color: black;
+    background-color: #000000;
     color: rgb(255, 166, 0);
 }
 
@@ -572,7 +566,7 @@ li .redes:hover {
 
 .icons-focus:hover > i {
     color:rgb(255, 166, 0);
-    background-color: white;
+    background-color: #ffffff;
     border: 1px solid rgb(255, 166, 0);
 }
 
@@ -600,13 +594,12 @@ input:focus, textarea:focus {
 }
 
 
-
 /* //////////////////////DARK MODE //////////////*/
 
 
 
 .dark-mode-font {
-    color: white;
+    color: #ffffff;
 }
 .dark-mode-background-section {
     background-color: rgb(34, 34, 34);
@@ -616,6 +609,8 @@ input:focus, textarea:focus {
     border: 1px solid rgba(204, 133, 2, 0.63);
     box-shadow: 0px 0px 10px 0px rgb(255, 166, 0);
 }
+
+
 
 
 
@@ -779,4 +774,5 @@ input[type = "submit"] {
 }
 
 }
+
 

@@ -11,6 +11,11 @@ const containerBurgerMenu = document.getElementById("container-menu-hamburguesa"
 const closeMenuHamburgesa = document.getElementById("close-container-menu-hamburguesa")
 const allSections = document.getElementById("all-sections");
 const linksMenuHamburguesa = document.querySelectorAll(".link-nav-menu-hamburguesa")
+
+const links = document.querySelectorAll(".icons-focus")
+
+
+  
 //Funcionalidad modo oscuro
 
 
@@ -29,6 +34,9 @@ buttonDarkMode.onclick = () => {
     for (let j = 0; j < cardsProjects.length; j++) {
         cardsProjects[j].classList.toggle('project-dark-mode');
         
+    }
+    for (let j = 0; j < links.length; j++) {
+        links[j].classList.toggle("dark-mode-font")
     }
 
 }
@@ -49,3 +57,4 @@ linksMenuHamburguesa.forEach ((link) => {
         containerBurgerMenu.style.top = "-100%"
     }
 })
+

@@ -1,11 +1,11 @@
-const buttonDarkMode = document.getElementById("switch");
-const circuloButtonDarkMode = document.getElementById("switch-circulo");
-const bodyBackground = document.getElementById("body");
+const buttonDarkMode = document.querySelector(".nav__button--switch");
+const iconLamp = document.querySelector(".fa-lightbulb");
+const bodyBackground = document.querySelector(".body");
 const colorFonts = document.querySelectorAll(".all-fonts");
 const sectionMisConocimientos = document.getElementById("software-tools");
 const cardsProjects = document.querySelectorAll(".project");
 const lampYellow = document.getElementById("lamp-yellow")
-const containerFolumar = document.getElementById("formular-container");
+const containerFormular = document.getElementById("formular-container");
 const openMenuHamburguesa = document.getElementById("open-menu-hamburguesa");
 const containerBurgerMenu = document.getElementById("container-menu-hamburguesa");
 const closeMenuHamburgesa = document.getElementById("close-container-menu-hamburguesa")
@@ -21,11 +21,11 @@ const links = document.querySelectorAll(".icons-focus")
 
 
 buttonDarkMode.onclick = () => {
-    circuloButtonDarkMode.classList.toggle('circle-dark-mode');
-    buttonDarkMode.classList.toggle('switch-light-mode');
+    buttonDarkMode.classList.toggle('nav__button--switch--darkmode');
+    iconLamp.classList.toggle('fa-lightbulb--darkmode')
     bodyBackground.classList.toggle('dark-mode-background');
     sectionMisConocimientos.classList.toggle('dark-mode-background-section');
-    containerFolumar.classList.toggle('dark-mode-background-section');
+    containerFormular.classList.toggle('dark-mode-background-section');
 
     for (let i = 0; i < colorFonts.length; i++) {
         colorFonts[i].classList.toggle('dark-mode-font');
@@ -43,8 +43,6 @@ buttonDarkMode.onclick = () => {
 
 openMenuHamburguesa.onclick = () => {
     containerBurgerMenu.style.top = "0"
-   
-   
 }
 
 closeMenuHamburgesa.onclick = () => {

@@ -7,8 +7,8 @@ const cardsProjects = document.querySelectorAll(".project");
 const lampYellow = document.getElementById("lamp-yellow")
 const containerFormular = document.getElementById("formular-container");
 const openMenuHamburguesa = document.getElementById("open-menu-hamburguesa");
-const containerBurgerMenu = document.getElementById("container-menu-hamburguesa");
-const closeMenuHamburgesa = document.getElementById("close-container-menu-hamburguesa")
+const containerBurgerMenu = document.querySelector(".container__dropdown-menu");
+const closeMenuHamburgesa = document.getElementById("close-dropdown-menu")
 const allSections = document.getElementById("all-sections");
 const linksMenuHamburguesa = document.querySelectorAll(".link-nav-menu-hamburguesa")
 
@@ -55,4 +55,55 @@ linksMenuHamburguesa.forEach ((link) => {
         containerBurgerMenu.style.top = "-100%"
     }
 })
+
+
+
+
+
+class X {
+    get Y() {return 42; }
+}
+
+var x = new X()
+
+
+console.log(x.Y)
+
+
+var a;
+var b = (a=3) ? true : false
+
+//The condition in the ternary statement is using the assignment operator
+
+
+var obj
+console.log(obj)
+//undefined
+
+
+// que operador no es unary 
+// delete
+// void
+// typeof
+// instanceof (este)
+
+
+// opcion incorrecta para devolver un arreglo vacio
+
+const vacio = () => {}
+
+const dessert = {type: 'pie'};
+dessert.type = 'pudding'
+
+
+console.log(dessert.type)
+
+
+function logThis () {
+    this.des = "logger";
+    console.log(this)
+}
+
+new logThis();
+
 

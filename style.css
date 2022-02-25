@@ -77,7 +77,7 @@ h1, .link-to-projects, .autor-cita, input[type="submit"], label, .nav__link--con
     display: flex;
     justify-content: space-between;
     background-color: #000000;
-    box-shadow: 0px 5px 8px #ffd484;
+    box-shadow: 0px 1px 8px 0px #ffd484;
     width:100%;
     padding: 20px 80px;
     position: fixed;
@@ -233,7 +233,6 @@ h1, .link-to-projects, .autor-cita, input[type="submit"], label, .nav__link--con
     font-size: 150%;
     width: 80%;
     text-align: left;
-    font-style: ;
 }
 
 .link-to-projects {
@@ -430,12 +429,13 @@ input[type="submit"] {
 
 /* --------------------FOOTER------------------------- */
 
-footer {
+.footer {
     background-color: #000000;
     padding: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0px 0px 8px 1px #ffd484;
 }
 
 .footer-nav {
@@ -450,7 +450,7 @@ footer {
 }
 
 .footer-nav li {
-    margin: 0 20px 50px 20px;
+    margin-bottom: 50px;
 }
 
 .footer-nav a {
@@ -601,8 +601,8 @@ input:focus, textarea:focus {
 }
 .project-dark-mode {
     background-color: #4e4949;
-    border: 1px solid rgba(204, 133, 2, 0.63);
-    box-shadow: 0px 0px 10px 0px rgb(255, 166, 0);
+    border: 1px solid #ffd484;
+    box-shadow: 0px 5px 5px 0px #ffd484;
 }
 
 .nav__button--switch--darkmode {
